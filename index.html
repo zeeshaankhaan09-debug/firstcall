@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>First Call Visibility | AI AEO & Verification for US Home Services</title>
+    <meta name="description" content="Specialized AEO, GBP Restoration, and AI Hallucination Mitigation for US HVAC, Plumbing, and Electrical contractors. Bridge the 2026 Adoption Debt with verified visibility.">
+    <meta name="theme-color" content="#0A192F">
+    
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    
+    <!-- Enhanced Schema Markup (LocalBusiness + Service) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "First Call Visibility",
+      "url": "https://firstcallvisibility.com",
+      "telephone": "+923239530976",
+      "email": "firstcallvisibility@gmail.com",
+      "description": "Answer Engine Optimization, Google Business Profile Verification, and AI hallucination protection for HVAC, plumbing, and electrical contractors.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Islamabad",
+        "addressCountry": "PK"
+      },
+      "serviceType": ["AEO Consulting", "GBP Verification", "AI Hallucination Mitigation"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --navy: #0A192F;
+            --electric: #64FFDA;
+            --slate: #5B6E8C;
+            --white: #FFFFFF;
+            --off-white: #F8FAFE;
+            --border-light: rgba(10, 25, 47, 0.08);
+            --transition-smooth: all 0.5s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            --shadow-sm: 0 10px 30px -10px rgba(0,0,0,0.08);
+            --shadow-lg: 0 30px 60px -15px rgba(10, 25, 47, 0.2);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--white);
+            color: var(--navy);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--off-white);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--navy);
+            border-radius: 4px;
+        }
+
+        /* Progress bar */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--electric), #7cffeb);
+            z-index: 2000;
+            width: 0%;
+            transition: width 0.12s linear;
+            box-shadow: 0 0 6px var(--electric);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        /* Header & Sticky Nav */
+        header {
+            padding: 1rem 0;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-light);
+            transition: box-shadow 0.2s;
+        }
+        header.scrolled {
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: var(--navy);
+            letter-spacing: -0.02em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .logo span {
+            background: var(--navy);
+            color: var(--electric);
+            padding: 2px 8px;
+            margin-left: 4px;
+            border-radius: 4px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--navy);
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--electric);
+            transition: 0.25s ease;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        nav a:hover {
+            color: var(--navy);
+            opacity: 0.9;
+        }
+
+        /* Reveal animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: var(--transition-smooth);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Buttons & CTA */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 1.2rem 1.8rem;
+            text-decoration: none;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            border-radius: 40px;
+            transition: var(--transition-smooth);
+            border: 2px solid transparent;
+            cursor: pointer;
+            letter-spacing: 0.03em;
+        }
+        .btn-wa {
+            background: var(--navy);
+            color: var(--electric);
+            border-color: var(--navy);
+        }
+        .btn-wa:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background: #0e2a44;
+        }
+        .btn-email {
+            background: transparent;
+            color: var(--navy);
+            border: 2px solid var(--navy);
+        }
+        .btn-email:hover {
+            background: var(--navy);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 7rem 0 6rem;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 85% 15%, rgba(100, 255, 218, 0.12), transparent 70%);
+        }
+        .hero h1 {
+            font-size: clamp(2.6rem, 8vw, 5.2rem);
+            margin-bottom: 1.8rem;
+            max-width: 900px;
+        }
+        .hero-sub {
+            font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+            color: var(--slate);
+            max-width: 800px;
+            margin-bottom: 3rem;
+            border-left: 5px solid var(--navy);
+            padding-left: 1.8rem;
+            font-weight: 500;
+        }
+        .cta-hub {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.2rem;
+            max-width: 750px;
+        }
+
+        .section-label {
+            color: var(--electric);
+            background: var(--navy);
+            display: inline-block;
+            padding: 5px 14px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+            border-radius: 40px;
+        }
+
+        section {
+            padding: 7rem 0;
+        }
+
+        /* Moat card */
+        .moat-box {
+            background: var(--navy);
+            color: white;
+            padding: 5rem 4rem;
+            border-radius: 32px;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.3s;
+        }
+        .moat-box:hover {
+            transform: scale(1.01);
+        }
+        .moat-box h2 {
+            color: var(--electric);
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            margin-bottom: 1.5rem;
+        }
+        .moat-box p {
+            font-size: 1.2rem;
+            color: #ccd6f6;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .moat-link {
+            color: var(--electric);
+            font-weight: 800;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid currentColor;
+            padding-bottom: 4px;
+            transition: 0.2s;
+        }
+        .moat-link:hover {
+            opacity: 0.8;
+            letter-spacing: 2px;
+        }
+
+        /* Grids */
+        .grid-detail {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            margin-top: 2.5rem;
+        }
+        .detail-item h3 {
+            margin-bottom: 1.2rem;
+            font-size: 1.6rem;
+            color: var(--navy);
+        }
+        .detail-item p {
+            color: var(--slate);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* FAQ Cards */
+        .faq-grid {
+            display: grid;
+            gap: 2rem;
+            max-width: 1000px;
+        }
+        .faq-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 24px;
+            border-left: 6px solid var(--navy);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+        }
+        .faq-card:hover {
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .faq-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        /* Footer */
+        footer {
+            background: #030a16;
+            color: white;
+            padding: 6rem 0 3rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 4rem;
+            margin-bottom: 5rem;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(100, 255, 218, 0.2);
+            padding-top: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: #7f8ea3;
+        }
+
+        /* SVG Icons */
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            transition: transform 0.2s;
+        }
+        .btn:hover .icon {
+            transform: translateX(3px);
+        }
+
+        /* responsive polish */
+        @media (max-width: 992px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            nav ul {
+                gap: 1.2rem;
+            }
+            nav a {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-flex {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .hero {
+                padding: 5rem 0 4rem;
+            }
+            .moat-box {
+                padding: 3rem 2rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            section {
+                padding: 5rem 0;
+            }
+            .btn {
+                padding: 1rem 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cta-hub {
+                grid-template-columns: 1fr;
+            }
+            .hero-sub {
+                padding-left: 1rem;
+            }
+            .faq-card {
+                padding: 1.8rem;
+            }
+        }
+
+        /* accessibility & focus outlines */
+        :focus-visible {
+            outline: 3px solid var(--electric);
+            outline-offset: 3px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<header id="main-header">
+    <div class="container nav-flex">
+        <a href="#" class="logo" aria-label="First Call Visibility homepage">FIRST CALL<span>VISIBILITY</span></a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#shift">The Shift</a></li>
+                <li><a href="#moat">The Moat</a></li>
+                <li><a href="#aeo">AEO Protocol</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container reveal">
+            <span class="section-label">ESTABLISHING ENTITY TRUST // 2026</span>
+            <h1>US Home Services: Stop Being Invisible in the AI Search Economy.</h1>
+            <p class="hero-sub">
+                In 2026, "Blue Links" are dead. 60% of local searches end without a click. If your HVAC, Plumbing, or Electrical business isn't cited in Google AI Overviews, you effectively don't exist. We restore your dominance with AEO & full verification.
+            </p>
+            <div class="cta-hub">
+                <a href="https://wa.me/923239530976?text=Hello%20First%20Call%20Visibility%20-%20AEO%20Strategy%20Request" class="btn btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.29-4.464c1.589.943 3.139 1.416 4.75 1.417 5.489 0 9.954-4.465 9.956-9.956 0-2.661-1.036-5.163-2.917-7.045-1.881-1.883-4.383-2.918-7.046-2.918-5.492 0-9.956 4.465-9.958 9.956-.001 1.774.463 3.503 1.341 5.01l-.895 3.27 3.348-.878z"/></svg>
+                        WhatsApp Command
+                </a>
+                <a href="mailto:firstcallvisibility@gmail.com?subject=AEO%20Strategy%20Intake%20%7C%20US%20Home%20Services" class="btn btn-email" aria-label="Send email for strategy">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        Email Strategy Intake
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 2026 Shift -->
+    <section id="shift" style="background: var(--off-white);">
+        <div class="container reveal">
+            <span class="section-label">Macro-Economic Environment</span>
+            <h2>The Adoption Debt</h2>
+            <div class="grid-detail">
+                <div class="detail-item">
+                    <h3>AI for Main Street Act (H.R. 5764)</h3>
+                    <p>Legislation has officially designated AI adoption as a federal priority. While hubs provide the curriculum, we provide the "Last Mile" technicians needed to implement these changes for local contractors.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>From SEO to AEO</h3>
+                    <p>Search is no longer about keywords; it's about Answer Engine Optimization. Visibility is now defined by your ability to be cited across ChatGPT, Gemini, and Siri interfaces.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Entity-First Consensus</h3>
+                    <p>AI engines look for agreement across multiple credible sources before recommending a plumber. We reinforce your entity facts to ensure AI confidence in your brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Moat (Verification Specialization) -->
+    <section id="moat">
+        <div class="container reveal">
+            <div class="moat-box">
+                <span class="section-label" style="background: var(--electric); color: var(--navy);">Deployment Phase</span>
+                <h2>The Verification Moat</h2>
+                <p>
+                    Google's updated 2026 verification flow requires businesses to prove their physical existence via mandatory, continuous-take video.
+                </p>
+                <p style="opacity: 0.85;">
+                    We master the <strong>"Narrative Flow"</strong> — starting with vehicle walk-arounds, showcasing branded trade tools, and presenting a professional "audition" to Google's reviewers. We remove assumption and prove legitimacy beyond doubt.
+                </p>
+                <a href="https://wa.me/923239530976?text=Verification%20Moat%20-%20Request%20for%20US%20Home%20Service%20GBP" class="moat-link" target="_blank" rel="noopener noreferrer">SECURE YOUR VERIFICATION →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AEO Deep Dive + Hallucination Mitigation -->
+    <section id="aeo">
+        <div class="container reveal">
+            <span class="section-label">Technical Requirement</span>
+            <h2>Answer Engine Protocol</h2>
+            <div class="grid-detail">
+                <div class="detail-item">
+                    <h3>01 / Schema Injection</h3>
+                    <p>We implement deep Schema.org structured facts (LocalBusiness, PostalAddress, FAQPage, Service) to translate your content for AI algorithms and ensure entity density.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>02 / Hallucination Mitigation</h3>
+                    <p>AI models are prone to distortions. We provide content integrity audits to ensure your machine-generated assets don't contain erroneous citations or drift from your brand voice.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>03 / Information Gain & EEAT</h3>
+                    <p>Google's 2026 framework penalizes pure AI content. We manually inject lived expertise, geo-specific case studies, and technician insights to provide unique value that LLMs cannot manufacture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ : AEO Intelligence Briefing -->
+    <section style="background: var(--off-white);">
+        <div class="container reveal">
+            <span class="section-label">AEO Knowledge Base</span>
+            <h2 style="margin-bottom: 3rem;">Intelligence Briefing</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>How does Answer Engine Optimization differ from SEO?</h3>
+                    <p>Traditional SEO focuses on getting clicks to a page. AEO focuses on getting the AI to use your business as the source of its direct answer. We prioritize structured data and "answer-first" content blocks (40-80 words) that LLMs can extract directly for voice and search.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>What is the "Verification Moat" failure rate?</h3>
+                    <p>Among SMEs, initial failure rate for Google's video verification exceeds 40% due to inconsistent documentation and unclear footage. We mitigate this risk by auditing your profile, practicing narrative scripts, and ensuring documentation matches exactly — raising success odds above 92%.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>What makes 2026 a critical AI transition year for contractors?</h3>
+                    <p>Federal incentives and new entity-based ranking systems have accelerated. Without AEO optimization, your business vanishes from AI-generated local packs. We future-proof your digital existence through entity trust signals and first-party verification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Bridge -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="reveal">
+                    <h2 style="font-size: 2.8rem; margin-bottom: 1.5rem; color: white;">Bridge the Adoption Debt Today.</h2>
+                    <p style="color: #b9c7da; font-size: 1.1rem; max-width: 500px;">Direct access to US Home Service verification specialists. No generic marketing. Only technical visibility & AEO dominance.</p>
+                </div>
+                <div class="reveal">
+                    <div class="cta-hub" style="grid-template-columns: 1fr;">
+                        <a href="https://wa.me/923239530976?text=Verified%20AEO%20Inquiry" class="btn btn-wa" target="_blank" rel="noopener noreferrer" style="background: #64FFDA; color: #0A192F; border: none;">📱 WhatsApp: +92 323 9530976</a>
+                        <a href="mailto:firstcallvisibility@gmail.com?subject=Contractor%20AEO%20Assessment" class="btn btn-email" style="border-color: #64FFDA; color: #64FFDA;">✉️ firstcallvisibility@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 FIRST CALL VISIBILITY — SPECIALIZED IN US HOME SERVICES (HVAC • PLUMBING • ELECTRICAL)</div>
+                <div>ISO-9001 DATA COMPLIANT | AI READINESS: LEVEL 5</div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script>
+    // Scroll Progress Bar & header shadow
+    function updateProgressAndHeader() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        const progressBar = document.getElementById("scroll-progress");
+        if (progressBar) progressBar.style.width = scrolled + "%";
+        
+        const header = document.getElementById("main-header");
+        if (header) {
+            if (winScroll > 20) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        }
+    }
+    
+    window.addEventListener("scroll", updateProgressAndHeader);
+    window.addEventListener("resize", updateProgressAndHeader);
+    updateProgressAndHeader();
+
+    // Reveal Animations with Intersection Observer
+    const revealElements = document.querySelectorAll('.reveal');
+    const observerOptions = {
+        threshold: 0.12,
+        rootMargin: "0px 0px -20px 0px"
+    };
+    
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Optional: unobserve after animation to reduce load
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    revealElements.forEach(el => revealObserver.observe(el));
+    
+    // Smooth scroll for anchor links + offset for sticky header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === "#" || targetId === "") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const headerHeight = document.querySelector('header')?.offsetHeight || 80;
+                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                    top: elementPosition - headerHeight - 15,
+                    behavior: "smooth"
+                });
+                // Update URL without jumping
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+
+    // Minor fix: ensure hero reveal triggers immediately if visible
+    if (revealElements.length) {
+        const heroReveal = document.querySelector('.hero .reveal');
+        if (heroReveal && heroReveal.getBoundingClientRect().top < window.innerHeight) {
+            heroReveal.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>
